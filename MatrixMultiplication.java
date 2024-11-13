@@ -2,11 +2,11 @@ import java.util.Scanner;
 public class MatrixMultiplication {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter the number of rows in Matrix A: ");
+        System.out.print("Enter rowsof Matrix A: ");
         int m = scanner.nextInt();
-        System.out.print("Enter the number of columns in Matrix A (and rows in Matrix B): ");
+        System.out.print("Enter columns in Matrix A (and rows in Matrix B): ");
         int n = scanner.nextInt();
-        System.out.print("Enter the number of columns in Matrix B: ");
+        System.out.print("Enter columns in Matrix B: ");
         int p = scanner.nextInt();
         int[][] A = new int[m][n];
         int[][] B = new int[n][p];
@@ -30,7 +30,7 @@ public class MatrixMultiplication {
                 }
             }
         }
-        System.out.println("Resultant Matrix (A * B):");
+        System.out.println("Result");
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < p; j++) {
                 System.out.print(C[i][j] + " ");
